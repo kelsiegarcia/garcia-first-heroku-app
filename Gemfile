@@ -38,6 +38,8 @@ gem 'will_paginate', '~> 3.1.0'
 
 group :production do
   gem 'puma'
+  # Heroku Gem for static assets / smooth deploys
+  gem 'rails_12factor'
 end
 
 
