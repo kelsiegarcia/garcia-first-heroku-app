@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+50.times do |index|
+  Animal.create(name: "animal #{index}",
+                age:rand(100),
+                gender:['Male', 'Female'].sample)
+end

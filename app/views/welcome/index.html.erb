@@ -1,2 +1,21 @@
-<h1>Hello World - Heroku!</h1>
+<h1 class='center'>Hello World - Heroku!</h1>
 <hr />
+
+<div class="row">
+  <% @animals.each do |animal| %>
+    <div class="col s12 m4">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title"><%= animal.name %></span>
+            <ul>
+              <li><%= animal.age %></li>
+              <li><%= animal.gender %></li>
+          </div>
+          <div class="card-action">
+            <a href="#">This is a link</a>
+            <a href="#">This is a link</a>
+          </div>
+        </div>
+      </div>
+  <% end %>
+</div>
